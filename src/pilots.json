@@ -1,5 +1,4 @@
-import { Profile } from "./Profile";
-const pilots = [
+[
   {
     "id": "1",
     "name": "Jacob Mercer",
@@ -22,13 +21,3 @@ const pilots = [
     "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Vmtqupl5WKIsVe83rJSzJmWfIn-sdOq9P8Rk8iY7ymK6ZhgRrNv85sgYAjwHUsCiik0&usqp=CAU"
   }
 ]
-
-export const App = () => {
-  return (
-    <div>
-      {pilots.map(pilot => (
-        <Profile key={pilot.id} imgUrl={pilot.avatar} username={pilot.name} email={pilot.email} age={pilot.age}/>
-      ))}
-    </div>
-  );
-};
